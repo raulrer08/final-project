@@ -15,7 +15,12 @@
       strengthen their understanding of your total health.
     </p>
     <center>
-      <img class="flex mt-5" src="nurse.png" width="500" height="500" />
+      <img
+        class="flex mt-5"
+        src="../assets/nurse.png"
+        width="500"
+        height="500"
+      />
     </center>
   </div>
   <div
@@ -35,7 +40,12 @@
       the United States and the United Kingdom.
     </p>
     <center>
-      <img class="flex mt-5" src="drsymbol.png" width="500" height="500" />
+      <img
+        class="flex mt-5"
+        src="../assets/drsymbol.png"
+        width="500"
+        height="500"
+      />
     </center>
   </div>
 </template>

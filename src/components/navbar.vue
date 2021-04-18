@@ -1,6 +1,6 @@
 <template>
   <div class="py-5 px-5 bg-pink-400 flex mr-10 rounded-r-3xl">
-    <img src="awv.png" width="300" height="100" />
+    <img src="../assets/awv.png" width="300" height="100" />
   </div>
 
   <div class="bg-purple-400 py-2 px-5 flex mr-10 rounded-r-2xl text-blue-900">

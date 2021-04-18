@@ -22,6 +22,6 @@
       chronic disease, and make a list of all the recommended Medicare
       preventive screenings you should receive for the next few years.
     </p>
-    <center><img class="" src="annual.png" width="500" height="500" /></center>
+    <center><img src="../assets/annual.png" width="500" height="500" /></center>
   </div>
 </template>
