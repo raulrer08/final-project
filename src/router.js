@@ -7,10 +7,12 @@ import contactus from './views/contactus.vue'
 import login from './views/login.vue'
 import search from './views/search.vue'
 import register from './views/reg.vue'
+import landing from './views/Landing.vue'
 
 
 
 const routes = [
+    {path: '/', component: landing},
     {path: '/Home', component: home},
     {path: '/contactus', component: contactus},
     {path: '/login', component:login},

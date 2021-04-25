@@ -8,7 +8,7 @@
   >
     <button
       class="ml-auto px-4 py-2 text-blue-900 font-bold bg-purple-400 rounded-full hover:bg-yellow-200 focus:outline-none focus:ring-4 focus:ring-blue-500"
-      @click="googlePopup"
+      @click="sendToHome"
     >
       <span class="material-icons align-text-bottom" id="homeIcon">login</span>
       Login
@@ -16,14 +16,19 @@
   </div>
   <div class="flex flex-col items-center justify-center space-y-8">
     <flat-color-icons:data-encryption class="w-20 h-20 mt-20 animate-bounce" />
-    <h1 class="text-6xl font-light tracking-wide text-red-300">
+    <h1 class="text-6xl font-bold tracking-wide text-pink-500">
       Please Login to Proceed
     </h1>
   </div>
 </template>
 
 <script setup>
+import { useRouter } from "vue-router";
 import { authentication } from "../helpers/useFirebase";
-
 const { isAuthenticated, user, googlePopup, signOut } = authentication();
+const router = useRouter();
+const sendToHome = () => {
+  googlePopup();
+  router.push("/home");
+};
 </script>

@@ -44,7 +44,7 @@
     <p>Welcome {{ user?.displayName }}</p>
     <button
       class="ml-auto px-4 py-2 text-blue-900 font-bold bg-purple-400 rounded-full hover:bg-yellow-200 focus:outline-none focus:ring-4 focus:ring-blue-500"
-      @click="signOut"
+      @click="signOutButton"
     >
       <span class="material-icons align-text-bottom" id="homeIcon">login</span>
       Logout
@@ -60,7 +60,15 @@
 </style>
 
 <script setup>
+import { useRouter } from "vue-router";
 import { authentication } from "../helpers/useFirebase";
 
+const router = useRouter();
+
 const { isAuthenticated, user, googlePopup, signOut } = authentication();
+
+const signOutButton = () => {
+  router.push("/");
+  signOut();
+};
 </script>
