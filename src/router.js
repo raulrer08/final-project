@@ -9,12 +9,14 @@ import search from './views/search.vue'
 import register from './views/reg.vue'
 
 
+
 const routes = [
-    {path: '/', component: home},
+    {path: '/Home', component: home},
     {path: '/contactus', component: contactus},
     {path: '/login', component:login},
     {path: '/search', component:search},
     {path: '/reg', component:register},
+    
     
 ]
 

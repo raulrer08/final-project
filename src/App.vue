@@ -1,5 +1,6 @@
 <template>
-  <navbar />
+  <Navbar v-if="isAuthenticated" />
+  <loginintro v-else />
   <router-view />
 </template>
 
@@ -7,3 +8,9 @@
 #app {
 }
 </style>
+
+<script setup>
+import { authentication } from "../src/helpers/useFirebase";
+
+const { isAuthenticated } = authentication();
+</script>
