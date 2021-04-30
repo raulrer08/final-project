@@ -15,9 +15,9 @@
     </button>
   </div>
   <div class="flex flex-col items-center justify-center space-y-8">
-    <flat-color-icons:data-encryption class="w-20 h-20 mt-20 animate-bounce" />
-    <h1 class="text-6xl font-bold tracking-wide text-pink-500">
-      Please Login to Proceed
+    <flat-color-icons:google class="w-20 h-20 mt-20 animate-pulse" />
+    <h1 class="text-4xl font-bold tracking-wide text-pink-500">
+      Please Login With Your Google Account to Proceed
     </h1>
   </div>
 </template>

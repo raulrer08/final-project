@@ -1,9 +1,9 @@
 <template>
-  <div class="text-3xl text-center text-blue-900">
-    <h1>Send us a Messages and a Representative will Answer Shortly</h1>
+  <div class="mt-28">
+    <Message v-for="(m, index) in messages" :key="index" :message="m" />
+    <div ref="bottom" class="pb-16" />
   </div>
-
-  <Messages />
+  <NewMessage @added="goToBottom" />
 </template>
 
 <script setup>

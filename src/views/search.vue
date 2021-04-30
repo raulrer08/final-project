@@ -48,4 +48,5 @@
       />
     </center>
   </div>
+  <Footer />
 </template>

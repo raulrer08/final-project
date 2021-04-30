@@ -24,4 +24,5 @@
     </p>
     <center><img src="../assets/annual.png" width="500" height="500" /></center>
   </div>
+  <Footer />
 </template>
